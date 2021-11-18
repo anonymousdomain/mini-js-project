@@ -17,4 +17,7 @@ paragraph.innerHTML='hello this dave welcome to the site thanks for visiting'
 profile_img.innerHTML='<img src="https://randomuser.me/api/portraits/men/22.jpg" alt="">'
 name.innerHTML='Dawit Mekonnen'
 date.innerHTML='march 25 2022'
+
+animated_bg.forEach(bg=>bg.classList.remove('animated-bg'))
+animated_bg_text.forEach(bg=>bg.classList.remove('animated-bg-text'))
 }

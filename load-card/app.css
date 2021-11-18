@@ -18,7 +18,9 @@ body{
     border-radius: 10px;
     overflow: hidden;
     width: 350px;
+
 }
+
 
 img{
     width: 100%;
@@ -26,6 +28,7 @@ img{
 
 .card-header{
     height: 200px;
+    border-bottom: 4px solid indigo;
 }
 
 .card-header img{

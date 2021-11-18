@@ -27,6 +27,13 @@ async function getData() {
 }
 
 function filterData(search){
-    console.log(search)
+    listItems.forEach(users=>{
+        if(users.innerText.toLowerCase().includes(search.toLowerCase())){
+            users.classList.remove('hide')
+        }
+        else{
+            users.classList.add('hide')
+        }
+    })
 }
 

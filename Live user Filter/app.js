@@ -1,16 +1,15 @@
-const filter = document.querySelector("#filter")
+const filter = document.querySelector('#filter')
 
-const user = document.querySelector("#user")
+const users = document.querySelector('#user')
 
 const listItems = []
 
 getData()
-
 async function getData() {
     const res = await fetch('https://randomuser.me/api?results=30')
-
+   // https://randomuser.me/api?results=30
     const { results } = await res.json()
-    user.innerHTML = ''
+    users.innerHTML = ''
 
     results.forEach(user => {
         const li = document.createElement('li')
@@ -22,6 +21,6 @@ async function getData() {
    <p>${user.location.city},${user.location.country}</p>
       </div>`
 
-        user.appendChild(li)
+        users.appendChild(li)
     });
 }

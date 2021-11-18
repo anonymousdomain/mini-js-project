@@ -5,9 +5,10 @@ const users = document.querySelector('#user')
 const listItems = []
 
 getData()
+filter.addEventListener('input',(e)=>filterData(e.target.value))
 async function getData() {
     const res = await fetch('https://randomuser.me/api?results=30')
-   // https://randomuser.me/api?results=30
+  
     const { results } = await res.json()
     users.innerHTML = ''
 
@@ -24,3 +25,8 @@ async function getData() {
         users.appendChild(li)
     });
 }
+
+function filterData(search){
+    console.log(search)
+}
+

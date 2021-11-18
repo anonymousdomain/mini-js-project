@@ -28,7 +28,7 @@ img{
 
 .card-header{
     height: 200px;
-    border-bottom: 4px solid indigo;
+    border-bottom: 1px solid indigo;
 }
 
 .card-header img{

@@ -46,3 +46,36 @@ margin: 0;
 .header input:focus{
     outline: none;
 }
+.user-list{
+    background-color: #fff;
+    list-style-type: none;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.user-list li{
+    display: flex;
+    padding: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+.user-list li.hide{
+    display: none;
+}
+
+.user-list img{
+   border-radius: 50%;
+   object-fit: cover;
+   height: 50px;
+   width: 50px; 
+}
+
+.user-list .user-info{
+    margin-left: 10px;
+}
+.user-list .user-info h4{
+   margin-left: 10px;
+}
+.user-list .user-info p{
+   font-size: 12px;
+}
